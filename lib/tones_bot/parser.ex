@@ -9,7 +9,7 @@ defmodule TonesBot.Parser do
     end
   end
 
-  @error_message "That chord is not valid, send /help to see some examples"
+  @error_message "Ese acorde no es válido, envía /help para ver algunos ejemplos"
   def parse_note(note) do
     case String.split(note, " ", trim: true) do
       [note, type] ->

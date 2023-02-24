@@ -19,7 +19,7 @@ defmodule TonesBot.MessageFormatter do
       |> Enum.join("\n")
 
     """
-    The tonality is:
+    La tonalidad es:
     #{chords}
     """
   end
