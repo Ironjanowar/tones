@@ -1,21 +1,15 @@
-# TonesBot
+# TonalityBot
 
-**TODO: Add description**
+[@tonality_bot](https://t.me/tonality_bot)
 
-## Installation
+## Uso
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `tones_bot` to your list of dependencies in `mix.exs`:
+Envía el comando `/tonalidad <nota> <modo>`, por ejemplo:
+  - /tonalidad Do# Mayor
+  - /tonalidad Re Menor
 
-```elixir
-def deps do
-  [
-    {:tones_bot, "~> 0.1.0"}
-  ]
-end
-```
+**IMPORTANTE:** Ten en cuenta que no soy un músico de verdad, solo soy un aficionado y puede haber tonalidades erróneas
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/tones_bot](https://hexdocs.pm/tones_bot).
+# Ejemplo
 
+![ejemplo](./images/example.jpg)
