@@ -5,7 +5,7 @@ defmodule TonesBot.MixProject do
     [
       app: :tones_bot,
       version: "0.1.0",
-      elixir: "~> 1.10",
+      elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -22,11 +22,11 @@ defmodule TonesBot.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_gram, "~> 0.14"},
+      {:ex_gram, "~> 0.32"},
       {:tesla, "~> 1.2"},
       {:hackney, "~> 1.12"},
-      {:jason, ">= 1.0.0"},
-      {:logger_file_backend, "0.0.11"}
+      {:jason, "~> 1.4"},
+      {:logger_file_backend, "0.0.12"}
     ]
   end
 end

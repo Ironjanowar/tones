@@ -9,6 +9,7 @@ defmodule TonesBot.Parser do
     end
   end
 
+  @error_message "That chord is not valid, send /help to see some examples"
   def parse_note(note) do
     case String.split(note, " ", trim: true) do
       [note, type] ->
@@ -16,8 +17,11 @@ defmodule TonesBot.Parser do
           formatted_type = format_type(type)
           {:ok, TonesBot.tonality(note, formatted_type)}
         else
-          {:error, "That chord is not valid"}
+          {:error, @error_message}
         end
+
+      _ ->
+        {:error, @error_message}
     end
   end
 end
